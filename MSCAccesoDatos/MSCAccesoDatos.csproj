@@ -41,6 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Config.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Config.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Configuracion.cs">
       <DependentUpon>Configuracion.dbml</DependentUpon>
     </Compile>
@@ -58,6 +63,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Config.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Config.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Configuracion.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>Configuracion.designer.cs</LastGenOutput>
@@ -74,6 +84,11 @@
   <ItemGroup>
     <None Include="Configuracion.dbml.layout">
       <DependentUpon>Configuracion.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config.dbml.layout">
+      <DependentUpon>Config.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
