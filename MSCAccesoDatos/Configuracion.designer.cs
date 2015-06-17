@@ -33,9 +33,6 @@ namespace MSCAccesoDatos
     partial void InsertCF_COLEGIO(CF_COLEGIO instance);
     partial void UpdateCF_COLEGIO(CF_COLEGIO instance);
     partial void DeleteCF_COLEGIO(CF_COLEGIO instance);
-    partial void InsertCF_SUCURSALE(CF_SUCURSALE instance);
-    partial void UpdateCF_SUCURSALE(CF_SUCURSALE instance);
-    partial void DeleteCF_SUCURSALE(CF_SUCURSALE instance);
     partial void InsertCF_SUCURSAL(CF_SUCURSAL instance);
     partial void UpdateCF_SUCURSAL(CF_SUCURSAL instance);
     partial void DeleteCF_SUCURSAL(CF_SUCURSAL instance);
@@ -76,14 +73,6 @@ namespace MSCAccesoDatos
 			get
 			{
 				return this.GetTable<CF_COLEGIO>();
-			}
-		}
-		
-		public System.Data.Linq.Table<CF_SUCURSALE> CF_SUCURSALEs
-		{
-			get
-			{
-				return this.GetTable<CF_SUCURSALE>();
 			}
 		}
 		
@@ -253,116 +242,6 @@ namespace MSCAccesoDatos
 					this._CL_PAIS = value;
 					this.SendPropertyChanged("CL_PAIS");
 					this.OnCL_PAISChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CF_SUCURSALES")]
-	public partial class CF_SUCURSALE : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _SU_ID;
-		
-		private string _SU_NOMBRE;
-		
-		private string _SU_DIRECCION;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnSU_IDChanging(int value);
-    partial void OnSU_IDChanged();
-    partial void OnSU_NOMBREChanging(string value);
-    partial void OnSU_NOMBREChanged();
-    partial void OnSU_DIRECCIONChanging(string value);
-    partial void OnSU_DIRECCIONChanged();
-    #endregion
-		
-		public CF_SUCURSALE()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SU_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int SU_ID
-		{
-			get
-			{
-				return this._SU_ID;
-			}
-			set
-			{
-				if ((this._SU_ID != value))
-				{
-					this.OnSU_IDChanging(value);
-					this.SendPropertyChanging();
-					this._SU_ID = value;
-					this.SendPropertyChanged("SU_ID");
-					this.OnSU_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SU_NOMBRE", DbType="VarChar(100)")]
-		public string SU_NOMBRE
-		{
-			get
-			{
-				return this._SU_NOMBRE;
-			}
-			set
-			{
-				if ((this._SU_NOMBRE != value))
-				{
-					this.OnSU_NOMBREChanging(value);
-					this.SendPropertyChanging();
-					this._SU_NOMBRE = value;
-					this.SendPropertyChanged("SU_NOMBRE");
-					this.OnSU_NOMBREChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SU_DIRECCION", DbType="NChar(15)")]
-		public string SU_DIRECCION
-		{
-			get
-			{
-				return this._SU_DIRECCION;
-			}
-			set
-			{
-				if ((this._SU_DIRECCION != value))
-				{
-					this.OnSU_DIRECCIONChanging(value);
-					this.SendPropertyChanging();
-					this._SU_DIRECCION = value;
-					this.SendPropertyChanged("SU_DIRECCION");
-					this.OnSU_DIRECCIONChanged();
 				}
 			}
 		}

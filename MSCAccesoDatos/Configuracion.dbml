@@ -10,13 +10,6 @@
       <Column Name="CL_PAIS" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.CF_SUCURSALES" Member="CF_SUCURSALEs">
-    <Type Name="CF_SUCURSALE">
-      <Column Name="SU_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="SU_NOMBRE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="SU_DIRECCION" Type="System.String" DbType="NChar(15)" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.CF_SUCURSAL" Member="CF_SUCURSALs">
     <Type Name="CF_SUCURSAL">
       <Column Name="SU_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

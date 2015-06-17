@@ -1,0 +1,2 @@
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.exe
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.pdb
