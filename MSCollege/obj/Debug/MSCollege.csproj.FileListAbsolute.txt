@@ -1,0 +1,9 @@
+c:\users\fagargu\documents\visual studio 2012\Projects\MSCollege\MSCollege\bin\Debug\MSCollege.exe
+c:\users\fagargu\documents\visual studio 2012\Projects\MSCollege\MSCollege\bin\Debug\MSCollege.pdb
+c:\users\fagargu\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.csprojResolveAssemblyReference.cache
+c:\users\fagargu\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Form1.resources
+c:\users\fagargu\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Properties.Resources.resources
+c:\users\fagargu\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.csproj.GenerateResource.Cache
+c:\users\fagargu\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.exe.licenses
+c:\users\fagargu\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.exe
+c:\users\fagargu\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.pdb

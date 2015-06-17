@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Configuracion">
+  <DataContextMoniker Name="/ConfiguracionDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5a0367d3-f062-481e-aebb-37f6e2582f19" absoluteBounds="2.75, 0.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ConfiguracionDataContext/CF_COLEGIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16faa40c-e355-4ff4-9f88-7ade35c47fdb" absoluteBounds="2.765, 1.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="53f66425-326b-48ce-994c-8f9f00108eeb" absoluteBounds="0.5, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ConfiguracionDataContext/CF_SUCURSALE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8050845c-9943-439a-93c5-4f828481fd8e" absoluteBounds="0.51500000000000012, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="00a82be7-12c9-43f6-be56-67119aa413d6" absoluteBounds="5.125, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ConfiguracionDataContext/CF_SUCURSAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="56dff779-597a-4bb2-bfb1-7a28ec09090b" absoluteBounds="5.1400000000000006, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
