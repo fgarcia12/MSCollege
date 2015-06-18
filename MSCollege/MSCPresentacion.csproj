@@ -63,6 +63,12 @@
     <Compile Include="Catedraticos\Catedraticos.Designer.cs">
       <DependentUpon>Catedraticos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuracion\Nomenclatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Nomenclatura.Designer.cs">
+      <DependentUpon>Nomenclatura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Catedraticos\Catedraticos.resx">
       <DependentUpon>Catedraticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Nomenclatura.resx">
+      <DependentUpon>Nomenclatura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

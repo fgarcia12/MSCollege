@@ -47,5 +47,17 @@ namespace MSCollege
             ra.BringToFront();
             PanelPrincipal.Controls.Add(ra);
         }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PanelPrincipal.Controls.Clear();
+            Configuracion.Nomenclatura ra = new Configuracion.Nomenclatura();
+            ra.TopLevel = false;
+            ra.Parent = this.MdiParent;
+            ra.Dock = DockStyle.Fill;
+            ra.Show();
+            ra.BringToFront();
+             PanelPrincipal.Controls.Add(ra);
+        }
     }
 }

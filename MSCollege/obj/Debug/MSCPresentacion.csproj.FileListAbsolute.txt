@@ -12,3 +12,4 @@ D:\MSCollege\MSCollege\obj\Debug\MSCollege.exe
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.pdb
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.Catedraticos.Catedraticos.resources
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.Alumnos.RegistroAlumnos.resources
+D:\MSCollege\MSCollege\obj\Debug\MSCollege.Configuracion.Nomenclatura.resources

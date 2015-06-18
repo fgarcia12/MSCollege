@@ -34,6 +34,12 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.Catedraticos = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -42,19 +48,14 @@
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.PanelPrincipal = new System.Windows.Forms.Panel();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,9 +71,10 @@
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
-            this.barButtonItem7});
+            this.barButtonItem7,
+            this.barButtonItem8});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 9;
+            this.ribbonControl1.MaxItemId = 10;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -107,6 +109,56 @@
             this.Catedraticos.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("Catedraticos.LargeGlyph")));
             this.Catedraticos.Name = "Catedraticos";
             this.Catedraticos.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Catedraticos_ItemClick);
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Agregar Evento";
+            this.barButtonItem3.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.Glyph")));
+            this.barButtonItem3.Id = 4;
+            this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Ver Eventos";
+            this.barButtonItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.Glyph")));
+            this.barButtonItem4.Id = 5;
+            this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Ver Clases";
+            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
+            this.barButtonItem5.Id = 6;
+            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Registrar Alumno";
+            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
+            this.barButtonItem6.Id = 7;
+            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "Lista Alumnos";
+            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
+            this.barButtonItem7.Id = 8;
+            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "Nomenclatura del carné";
+            this.barButtonItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.Glyph")));
+            this.barButtonItem8.Id = 9;
+            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
+            this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -164,6 +216,18 @@
             this.ribbonPage4.Name = "ribbonPage4";
             this.ribbonPage4.Text = "Alumnos";
             // 
+            // ribbonPageGroup9
+            // 
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
+            this.ribbonPageGroup9.Text = "Alumnos";
+            // 
+            // ribbonPageGroup10
+            // 
+            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+            this.ribbonPageGroup10.Text = "ribbonPageGroup10";
+            // 
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -175,8 +239,9 @@
             // 
             // ribbonPageGroup4
             // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "Area Alumnos";
             // 
             // ribbonPageGroup5
             // 
@@ -200,59 +265,6 @@
             this.PanelPrincipal.Name = "PanelPrincipal";
             this.PanelPrincipal.Size = new System.Drawing.Size(900, 339);
             this.PanelPrincipal.TabIndex = 1;
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Caption = "Agregar Evento";
-            this.barButtonItem3.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.Glyph")));
-            this.barButtonItem3.Id = 4;
-            this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
-            this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Ver Eventos";
-            this.barButtonItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.Glyph")));
-            this.barButtonItem4.Id = 5;
-            this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "Ver Clases";
-            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
-            this.barButtonItem5.Id = 6;
-            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
-            this.barButtonItem5.Name = "barButtonItem5";
-            // 
-            // ribbonPageGroup9
-            // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem6);
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.Text = "Alumnos";
-            // 
-            // ribbonPageGroup10
-            // 
-            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "ribbonPageGroup10";
-            // 
-            // barButtonItem6
-            // 
-            this.barButtonItem6.Caption = "Registrar Alumno";
-            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
-            this.barButtonItem6.Id = 7;
-            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
-            this.barButtonItem6.Name = "barButtonItem6";
-            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
-            // 
-            // barButtonItem7
-            // 
-            this.barButtonItem7.Caption = "Lista Alumnos";
-            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
-            this.barButtonItem7.Id = 8;
-            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
-            this.barButtonItem7.Name = "barButtonItem7";
             // 
             // Form1
             // 
@@ -300,6 +312,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
     }
 }
 
