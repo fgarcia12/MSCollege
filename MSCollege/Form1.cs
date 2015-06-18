@@ -23,7 +23,8 @@ namespace MSCollege
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+
+        private void Catedraticos_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             PanelPrincipal.Controls.Clear();
             Catedraticos.Catedraticos ca = new Catedraticos.Catedraticos();
@@ -33,6 +34,18 @@ namespace MSCollege
             ca.Show();
             ca.BringToFront();
             PanelPrincipal.Controls.Add(ca);
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PanelPrincipal.Controls.Clear();
+            Alumnos.RegistroAlumnos ra = new Alumnos.RegistroAlumnos();
+            ra.TopLevel = false;
+            ra.Parent = this.MdiParent;
+            ra.Dock = DockStyle.Fill;
+            ra.Show();
+            ra.BringToFront();
+            PanelPrincipal.Controls.Add(ra);
         }
     }
 }

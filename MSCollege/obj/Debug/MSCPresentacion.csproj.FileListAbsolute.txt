@@ -11,3 +11,4 @@ D:\MSCollege\MSCollege\obj\Debug\MSCollege.exe.licenses
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.exe
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.pdb
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.Catedraticos.Catedraticos.resources
+D:\MSCollege\MSCollege\obj\Debug\MSCollege.Alumnos.RegistroAlumnos.resources
