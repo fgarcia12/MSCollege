@@ -20,6 +20,19 @@ namespace MSCollege
         private void Form1_Load(object sender, EventArgs e)
         {
             Thread.Sleep(1500);
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PanelPrincipal.Controls.Clear();
+            Catedraticos.Catedraticos ca = new Catedraticos.Catedraticos();
+            ca.TopLevel = false;
+            ca.Parent = this.MdiParent;
+            ca.Dock = DockStyle.Fill;
+            ca.Show();
+            ca.BringToFront();
+            PanelPrincipal.Controls.Add(ca);
         }
     }
 }

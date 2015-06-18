@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSCPresentacion", "MSCollege\MSCPresentacion.csproj", "{0F5D6698-7D50-4D66-B707-ADD870E6E1FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSCAccesoDatos", "MSCAccesoDatos\MSCAccesoDatos.csproj", "{E18210AD-776A-4C05-AE29-A54CB827400D}"

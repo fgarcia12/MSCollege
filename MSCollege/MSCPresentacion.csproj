@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Catedraticos\Catedraticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catedraticos\Catedraticos.Designer.cs">
+      <DependentUpon>Catedraticos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     <Compile Include="sps.Designer.cs">
       <DependentUpon>sps.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Catedraticos\Catedraticos.resx">
+      <DependentUpon>Catedraticos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\msc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Alumnos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

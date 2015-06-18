@@ -10,3 +10,4 @@ D:\MSCollege\MSCollege\obj\Debug\MSCPresentacion.csproj.GenerateResource.Cache
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.exe.licenses
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.exe
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.pdb
+D:\MSCollege\MSCollege\obj\Debug\MSCollege.Catedraticos.Catedraticos.resources
