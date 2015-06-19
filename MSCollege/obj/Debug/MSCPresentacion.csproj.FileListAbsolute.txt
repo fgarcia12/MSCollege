@@ -26,3 +26,6 @@ D:\MSCollege\MSCollege\obj\Debug\MSCollege.Configuracion.Nomenclatura.resources
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.Eventos.AddEvento.resources
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.Alumnos.RegAlumnos.resources
 >>>>>>> origin/master
+C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Alumnos.RegAlumnos.resources
+C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Configuracion.Nomenclatura.resources
+C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Eventos.AddEvento.resources

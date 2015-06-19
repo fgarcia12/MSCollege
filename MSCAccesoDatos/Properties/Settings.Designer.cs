@@ -32,5 +32,16 @@ namespace MSCAccesoDatos.Properties {
                 return ((string)(this["COLEGIOSConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=186.151.198.5;Initial Catalog=MSCollegeDB;Persist Security Info=True;" +
+            "User ID=sa;Password=Junio2015")]
+        public string MSCollegeDBConnectionString {
+            get {
+                return ((string)(this["MSCollegeDBConnectionString"]));
+            }
+        }
     }
 }

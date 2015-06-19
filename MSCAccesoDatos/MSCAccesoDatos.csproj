@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alumnos.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Alumnos.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Config.designer.cs">
       <AutoGen>True</AutoGen>
@@ -62,6 +67,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Alumnos.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Alumnos.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="app.config" />
     <None Include="Config.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -89,6 +99,11 @@
   <ItemGroup>
     <None Include="Config.dbml.layout">
       <DependentUpon>Config.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Alumnos.dbml.layout">
+      <DependentUpon>Alumnos.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

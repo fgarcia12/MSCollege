@@ -139,7 +139,12 @@
   <ItemGroup>
     <None Include="Resources\msc.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MSCAccesoDatos\MSCAccesoDatos.csproj">
+      <Project>{e18210ad-776a-4c05-ae29-a54cb827400d}</Project>
+      <Name>MSCAccesoDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
