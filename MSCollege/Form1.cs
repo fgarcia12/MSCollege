@@ -59,5 +59,10 @@ namespace MSCollege
             ra.BringToFront();
              PanelPrincipal.Controls.Add(ra);
         }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }

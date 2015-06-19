@@ -74,9 +74,7 @@ namespace MSCollege.Configuracion
 
             labelControl2.Text = flowLayoutPanel1.Controls[0].Text +"-"+flowLayoutPanel1.Controls[1].Text +"-"+flowLayoutPanel1.Controls[2].Text;
             labelControl2.Focus();
-            lbl0.Text = flowLayoutPanel1.Controls[0].Text;
-            lbl1.Text = flowLayoutPanel1.Controls[1].Text;
-            lbl2.Text = flowLayoutPanel1.Controls[2].Text;
+            
         }
 
         private void Nomenclatura_Load(object sender, EventArgs e)
