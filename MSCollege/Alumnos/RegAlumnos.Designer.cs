@@ -35,19 +35,19 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
-            this.txtNombres = new System.Windows.Forms.TextBox();
-            this.txtFechaNac = new DevExpress.XtraEditors.DateEdit();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtNacionalidad = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.txtReligion = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.txtUltimoGrado = new System.Windows.Forms.TextBox();
-            this.txtNombrePadre = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.txtNombreMadre = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTipoSangre = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -70,26 +70,20 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.carnetxt = new System.Windows.Forms.TextBox();
             this.cbfecha = new DevExpress.XtraEditors.DateEdit();
-            this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFechaNac.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFechaNac.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties)).BeginInit();
             this.SuspendLayout();
@@ -101,33 +95,32 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabControl1.Location = new System.Drawing.Point(0, 129);
+            this.tabControl1.Location = new System.Drawing.Point(0, 90);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(910, 431);
+            this.tabControl1.Size = new System.Drawing.Size(910, 470);
             this.tabControl1.TabIndex = 11;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.labelControl13);
             this.tabPage1.Controls.Add(this.radioGroup1);
-            this.tabPage1.Controls.Add(this.txtNombres);
-            this.tabPage1.Controls.Add(this.txtFechaNac);
-            this.tabPage1.Controls.Add(this.txtApellido);
-            this.tabPage1.Controls.Add(this.txtNacionalidad);
+            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.dateEdit1);
+            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.textBox5);
             this.tabPage1.Controls.Add(this.labelControl11);
-            this.tabPage1.Controls.Add(this.txtReligion);
+            this.tabPage1.Controls.Add(this.textBox6);
             this.tabPage1.Controls.Add(this.labelControl10);
-            this.tabPage1.Controls.Add(this.txtUltimoGrado);
-            this.tabPage1.Controls.Add(this.txtNombrePadre);
+            this.tabPage1.Controls.Add(this.textBox7);
+            this.tabPage1.Controls.Add(this.textBox8);
             this.tabPage1.Controls.Add(this.labelControl9);
-            this.tabPage1.Controls.Add(this.txtNombreMadre);
+            this.tabPage1.Controls.Add(this.textBox9);
             this.tabPage1.Controls.Add(this.labelControl8);
-            this.tabPage1.Controls.Add(this.txtTipoSangre);
+            this.tabPage1.Controls.Add(this.textBox10);
             this.tabPage1.Controls.Add(this.labelControl7);
             this.tabPage1.Controls.Add(this.labelControl3);
             this.tabPage1.Controls.Add(this.labelControl6);
@@ -137,14 +130,14 @@
             this.tabPage1.Controls.Add(this.labelControl14);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(902, 405);
+            this.tabPage1.Size = new System.Drawing.Size(902, 444);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Información Personal";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(582, 222);
+            this.button2.Location = new System.Drawing.Point(615, 222);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
@@ -154,7 +147,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(517, 222);
+            this.button1.Location = new System.Drawing.Point(550, 222);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(59, 23);
             this.button1.TabIndex = 6;
@@ -164,7 +157,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(517, 62);
+            this.pictureBox1.Location = new System.Drawing.Point(550, 62);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 156);
             this.pictureBox1.TabIndex = 5;
@@ -191,40 +184,40 @@
             this.radioGroup1.Size = new System.Drawing.Size(245, 22);
             this.radioGroup1.TabIndex = 4;
             // 
-            // txtNombres
+            // textBox2
             // 
-            this.txtNombres.Location = new System.Drawing.Point(183, 62);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(245, 21);
-            this.txtNombres.TabIndex = 0;
+            this.textBox2.Location = new System.Drawing.Point(183, 62);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(245, 21);
+            this.textBox2.TabIndex = 0;
             // 
-            // txtFechaNac
+            // dateEdit1
             // 
-            this.txtFechaNac.EditValue = null;
-            this.txtFechaNac.Location = new System.Drawing.Point(183, 116);
-            this.txtFechaNac.Name = "txtFechaNac";
-            this.txtFechaNac.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEdit1.EditValue = null;
+            this.dateEdit1.Location = new System.Drawing.Point(183, 116);
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtFechaNac.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtFechaNac.Properties.Mask.EditMask = "";
-            this.txtFechaNac.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.txtFechaNac.Size = new System.Drawing.Size(245, 20);
-            this.txtFechaNac.TabIndex = 3;
+            this.dateEdit1.Properties.Mask.EditMask = "";
+            this.dateEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.dateEdit1.Size = new System.Drawing.Size(245, 20);
+            this.dateEdit1.TabIndex = 3;
             // 
-            // txtApellido
+            // textBox3
             // 
-            this.txtApellido.Location = new System.Drawing.Point(183, 89);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(245, 21);
-            this.txtApellido.TabIndex = 0;
+            this.textBox3.Location = new System.Drawing.Point(183, 89);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(245, 21);
+            this.textBox3.TabIndex = 0;
             // 
-            // txtNacionalidad
+            // textBox5
             // 
-            this.txtNacionalidad.Location = new System.Drawing.Point(183, 143);
-            this.txtNacionalidad.Name = "txtNacionalidad";
-            this.txtNacionalidad.Size = new System.Drawing.Size(245, 21);
-            this.txtNacionalidad.TabIndex = 0;
+            this.textBox5.Location = new System.Drawing.Point(183, 143);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(245, 21);
+            this.textBox5.TabIndex = 0;
             // 
             // labelControl11
             // 
@@ -234,12 +227,12 @@
             this.labelControl11.TabIndex = 1;
             this.labelControl11.Text = "Tipo de sangre:";
             // 
-            // txtReligion
+            // textBox6
             // 
-            this.txtReligion.Location = new System.Drawing.Point(183, 170);
-            this.txtReligion.Name = "txtReligion";
-            this.txtReligion.Size = new System.Drawing.Size(245, 21);
-            this.txtReligion.TabIndex = 0;
+            this.textBox6.Location = new System.Drawing.Point(183, 170);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(245, 21);
+            this.textBox6.TabIndex = 0;
             // 
             // labelControl10
             // 
@@ -249,19 +242,19 @@
             this.labelControl10.TabIndex = 1;
             this.labelControl10.Text = "Nombre de la madre:";
             // 
-            // txtUltimoGrado
+            // textBox7
             // 
-            this.txtUltimoGrado.Location = new System.Drawing.Point(183, 197);
-            this.txtUltimoGrado.Name = "txtUltimoGrado";
-            this.txtUltimoGrado.Size = new System.Drawing.Size(245, 21);
-            this.txtUltimoGrado.TabIndex = 0;
+            this.textBox7.Location = new System.Drawing.Point(183, 197);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(245, 21);
+            this.textBox7.TabIndex = 0;
             // 
-            // txtNombrePadre
+            // textBox8
             // 
-            this.txtNombrePadre.Location = new System.Drawing.Point(183, 224);
-            this.txtNombrePadre.Name = "txtNombrePadre";
-            this.txtNombrePadre.Size = new System.Drawing.Size(245, 21);
-            this.txtNombrePadre.TabIndex = 0;
+            this.textBox8.Location = new System.Drawing.Point(183, 224);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(245, 21);
+            this.textBox8.TabIndex = 0;
             // 
             // labelControl9
             // 
@@ -271,12 +264,12 @@
             this.labelControl9.TabIndex = 1;
             this.labelControl9.Text = "Nombre del padre:";
             // 
-            // txtNombreMadre
+            // textBox9
             // 
-            this.txtNombreMadre.Location = new System.Drawing.Point(183, 251);
-            this.txtNombreMadre.Name = "txtNombreMadre";
-            this.txtNombreMadre.Size = new System.Drawing.Size(245, 21);
-            this.txtNombreMadre.TabIndex = 0;
+            this.textBox9.Location = new System.Drawing.Point(183, 251);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(245, 21);
+            this.textBox9.TabIndex = 0;
             // 
             // labelControl8
             // 
@@ -286,12 +279,12 @@
             this.labelControl8.TabIndex = 1;
             this.labelControl8.Text = "Último grado aprovado:";
             // 
-            // txtTipoSangre
+            // textBox10
             // 
-            this.txtTipoSangre.Location = new System.Drawing.Point(183, 278);
-            this.txtTipoSangre.Name = "txtTipoSangre";
-            this.txtTipoSangre.Size = new System.Drawing.Size(245, 21);
-            this.txtTipoSangre.TabIndex = 0;
+            this.textBox10.Location = new System.Drawing.Point(183, 278);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(245, 21);
+            this.textBox10.TabIndex = 0;
             // 
             // labelControl7
             // 
@@ -365,7 +358,7 @@
             this.tabPage2.Controls.Add(this.textBox4);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(902, 405);
+            this.tabPage2.Size = new System.Drawing.Size(902, 444);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "Información de contacto";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -465,39 +458,22 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(902, 405);
+            this.tabPage3.Size = new System.Drawing.Size(902, 444);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "Transporte";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.gridControl1);
             this.tabPage4.Controls.Add(this.textBox16);
-            this.tabPage4.Controls.Add(this.labelControl22);
             this.tabPage4.Controls.Add(this.labelControl21);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(902, 405);
+            this.tabPage4.Size = new System.Drawing.Size(902, 444);
             this.tabPage4.TabIndex = 2;
             this.tabPage4.Text = "Documentos";
             this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(29, 108);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(400, 200);
-            this.gridControl1.TabIndex = 2;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
             // 
             // textBox16
             // 
@@ -505,14 +481,6 @@
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(262, 21);
             this.textBox16.TabIndex = 1;
-            // 
-            // labelControl22
-            // 
-            this.labelControl22.Location = new System.Drawing.Point(29, 89);
-            this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(101, 13);
-            this.labelControl22.TabIndex = 0;
-            this.labelControl22.Text = "Papeleria entregada:";
             // 
             // labelControl21
             // 
@@ -560,16 +528,6 @@
             this.cbfecha.Size = new System.Drawing.Size(210, 20);
             this.cbfecha.TabIndex = 10;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(183, 333);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(59, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Guardar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // RegAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -589,14 +547,12 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFechaNac.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFechaNac.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -613,19 +569,19 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.RadioGroup radioGroup1;
-        private System.Windows.Forms.TextBox txtNombres;
-        private DevExpress.XtraEditors.DateEdit txtFechaNac;
-        private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtNacionalidad;
+        private System.Windows.Forms.TextBox textBox2;
+        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox5;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private System.Windows.Forms.TextBox txtReligion;
+        private System.Windows.Forms.TextBox textBox6;
         private DevExpress.XtraEditors.LabelControl labelControl10;
-        private System.Windows.Forms.TextBox txtUltimoGrado;
-        private System.Windows.Forms.TextBox txtNombrePadre;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private System.Windows.Forms.TextBox txtNombreMadre;
+        private System.Windows.Forms.TextBox textBox9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private System.Windows.Forms.TextBox txtTipoSangre;
+        private System.Windows.Forms.TextBox textBox10;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl6;
@@ -648,16 +604,12 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.TextBox textBox16;
-        private DevExpress.XtraEditors.LabelControl labelControl22;
         private DevExpress.XtraEditors.LabelControl labelControl21;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.TextBox carnetxt;
         private DevExpress.XtraEditors.DateEdit cbfecha;
-        private System.Windows.Forms.Button button3;
 
     }
 }
