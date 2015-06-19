@@ -21,7 +21,13 @@ namespace MSCollege.Alumnos
             InitializeComponent();
         }
 
+
+
         Herramientas.WebCam webcam;
+        public MSCAccesoDatos.AlumnosDataContext dc = new MSCAccesoDatos.AlumnosDataContext();
+        
+      
+
         private void button1_Click(object sender, EventArgs e)
         {
             webcam.Start();
@@ -52,15 +58,21 @@ namespace MSCollege.Alumnos
             webcam.Stop();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AlumnosDataContext dc = new AlumnosDataContext();
-            AL_ALUMO Agregar = new AL_ALUMO();
-            Agregar.AL_PNOMBRE = txtNombres.Text;
-            Agregar.AL_PAPELLIDO = txtApellido.Text;
-            dc.InsertAL_ALUMO(Agregar);
-            
+         
+     
 
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            if (Valida.Validate())
+            {
+
+
+                dc.sp_Agrega_Alumno(1, "", "", "", "", "", "", "", "", "", "", "", "");
+
+
+
+                //.InsertAL_ALUMO(Agregar);
+            }
         }
     }
 }

@@ -28,16 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtPApellido = new DevExpress.XtraEditors.TextEdit();
+            this.txtPNombre = new DevExpress.XtraEditors.TextEdit();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
-            this.txtNombres = new System.Windows.Forms.TextBox();
             this.txtFechaNac = new DevExpress.XtraEditors.DateEdit();
-            this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNacionalidad = new System.Windows.Forms.TextBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.txtReligion = new System.Windows.Forms.TextBox();
@@ -79,9 +83,12 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.carnetxt = new System.Windows.Forms.TextBox();
             this.cbfecha = new DevExpress.XtraEditors.DateEdit();
+            this.Valida = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPApellido.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPNombre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFechaNac.Properties.CalendarTimeProperties)).BeginInit();
@@ -92,6 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Valida)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -110,14 +118,14 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.txtPApellido);
+            this.tabPage1.Controls.Add(this.txtPNombre);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.labelControl13);
             this.tabPage1.Controls.Add(this.radioGroup1);
-            this.tabPage1.Controls.Add(this.txtNombres);
             this.tabPage1.Controls.Add(this.txtFechaNac);
-            this.tabPage1.Controls.Add(this.txtApellido);
             this.tabPage1.Controls.Add(this.txtNacionalidad);
             this.tabPage1.Controls.Add(this.labelControl11);
             this.tabPage1.Controls.Add(this.txtReligion);
@@ -141,6 +149,26 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Información Personal";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txtPApellido
+            // 
+            this.txtPApellido.Location = new System.Drawing.Point(183, 90);
+            this.txtPApellido.Name = "txtPApellido";
+            this.txtPApellido.Size = new System.Drawing.Size(245, 20);
+            this.txtPApellido.TabIndex = 9;
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "Ingrese Apellido";
+            this.Valida.SetValidationRule(this.txtPApellido, conditionValidationRule1);
+            // 
+            // txtPNombre
+            // 
+            this.txtPNombre.Location = new System.Drawing.Point(183, 62);
+            this.txtPNombre.Name = "txtPNombre";
+            this.txtPNombre.Size = new System.Drawing.Size(245, 20);
+            this.txtPNombre.TabIndex = 8;
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule2.ErrorText = "Ingrese un Nombre";
+            this.Valida.SetValidationRule(this.txtPNombre, conditionValidationRule2);
             // 
             // button2
             // 
@@ -191,13 +219,6 @@
             this.radioGroup1.Size = new System.Drawing.Size(245, 22);
             this.radioGroup1.TabIndex = 4;
             // 
-            // txtNombres
-            // 
-            this.txtNombres.Location = new System.Drawing.Point(183, 62);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(245, 21);
-            this.txtNombres.TabIndex = 0;
-            // 
             // txtFechaNac
             // 
             this.txtFechaNac.EditValue = null;
@@ -211,13 +232,9 @@
             this.txtFechaNac.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtFechaNac.Size = new System.Drawing.Size(245, 20);
             this.txtFechaNac.TabIndex = 3;
-            // 
-            // txtApellido
-            // 
-            this.txtApellido.Location = new System.Drawing.Point(183, 89);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(245, 21);
-            this.txtApellido.TabIndex = 0;
+            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule3.ErrorText = "This value is not valid";
+            this.Valida.SetValidationRule(this.txtFechaNac, conditionValidationRule3);
             // 
             // txtNacionalidad
             // 
@@ -562,13 +579,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(183, 333);
+            this.button3.Location = new System.Drawing.Point(61, 300);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(59, 23);
-            this.button3.TabIndex = 7;
+            this.button3.TabIndex = 10;
             this.button3.Text = "Guardar";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // RegAlumnos
             // 
@@ -587,6 +604,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPApellido.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPNombre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFechaNac.Properties.CalendarTimeProperties)).EndInit();
@@ -599,6 +618,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Valida)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -613,9 +633,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.RadioGroup radioGroup1;
-        private System.Windows.Forms.TextBox txtNombres;
         private DevExpress.XtraEditors.DateEdit txtFechaNac;
-        private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNacionalidad;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private System.Windows.Forms.TextBox txtReligion;
@@ -657,6 +675,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.TextBox carnetxt;
         private DevExpress.XtraEditors.DateEdit cbfecha;
+        private DevExpress.XtraEditors.TextEdit txtPApellido;
+        private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider Valida;
+        private DevExpress.XtraEditors.TextEdit txtPNombre;
         private System.Windows.Forms.Button button3;
 
     }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MSCollegeDB" Class="AlumnosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=186.151.198.5;Initial Catalog=MSCollegeDB;Persist Security Info=True;User ID=sa" SettingsObjectName="MSCAccesoDatos.Properties.Settings" SettingsPropertyName="MSCollegeDBConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.AL_ALUMOS" Member="AL_ALUMOs">
-    <Type Name="AL_ALUMO">
+    <Type Name="AL_ALUMO" Modifier="Sealed">
       <Column Name="AL_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="AL_CARNET" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="AL_PNOMBRE" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
@@ -16,35 +16,23 @@
       <Column Name="AL_MAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="AL_FOTO" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="AL_DIRECCION" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="AL_ALUMO_AL_DIRECCIONE" Member="AL_DIRECCIONEs" ThisKey="AL_ID" OtherKey="DI_ALUMNO" Type="AL_DIRECCIONE" />
-      <Association Name="AL_ALUMO_AL_ENCARGADO" Member="AL_ENCARGADOs" ThisKey="AL_ID" OtherKey="EN_ALUMNO" Type="AL_ENCARGADO" />
     </Type>
   </Table>
-  <Table Name="dbo.AL_DIRECCIONES" Member="AL_DIRECCIONEs">
-    <Type Name="AL_DIRECCIONE">
-      <Column Name="DI_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DI_ALUMNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DI_DIRECCION" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="DI_PAIS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DI_DEPARTAMENTO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DI_MUNICIPIO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DI_ESTADO" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
-      <Association Name="AL_ALUMO_AL_DIRECCIONE" Member="AL_ALUMO" ThisKey="DI_ALUMNO" OtherKey="AL_ID" Type="AL_ALUMO" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.AL_ENCARGADO" Member="AL_ENCARGADOs">
-    <Type Name="AL_ENCARGADO">
-      <Column Name="EN_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="EN_ALUMNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="EN_NOMBRE" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="EN_DIRECCION" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="EN_CELULAR" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="EN_TELEFONO_CASA" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="EN_TELEFONO_TRABAJO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="EN_PARENTESCO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="EN_PRICIPAL" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
-      <Column Name="EN_ESTADO" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
-      <Association Name="AL_ALUMO_AL_ENCARGADO" Member="AL_ALUMO" ThisKey="EN_ALUMNO" OtherKey="AL_ID" Type="AL_ALUMO" IsForeignKey="true" />
-    </Type>
-  </Table>
+  <Function Name="dbo.sp_Agrega_Alumno" Method="sp_Agrega_Alumno">
+    <Parameter Name="AL_ID" Parameter="aL_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AL_CARNET" Parameter="aL_CARNET" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="AL_PNOMBRE" Parameter="aL_PNOMBRE" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="AL_SNOMBRE" Parameter="aL_SNOMBRE" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="AL_TNOMBRE" Parameter="aL_TNOMBRE" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="AL_PAPELLIDO" Parameter="aL_PAPELLIDO" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="AL_SAPELLIDO" Parameter="aL_SAPELLIDO" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="AL_FECHA_NAC" Parameter="aL_FECHA_NAC" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="AL_FECHA_REG" Parameter="aL_FECHA_REG" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="AL_ESTADO" Parameter="aL_ESTADO" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="AL_SUCURSAL" Parameter="aL_SUCURSAL" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AL_MAIL" Parameter="aL_MAIL" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AL_FOTO" Parameter="aL_FOTO" Type="System.Data.Linq.Binary" DbType="Image" />
+    <Parameter Name="AL_DIRECCION" Parameter="aL_DIRECCION" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

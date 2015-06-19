@@ -1,0 +1,49 @@
+﻿create proc sp_Agrega_Alumno
+(@AL_ID  int=null,
+           @AL_CARNET nchar(10)=null,
+           @AL_PNOMBRE nchar(10)=null,
+           @AL_SNOMBRE nchar(10)=null,
+           @AL_TNOMBRE nchar(10)=null,
+           @AL_PAPELLIDO nchar(10)=null,
+           @AL_SAPELLIDO nchar(10)=null,
+           @AL_FECHA_NAC date=null,
+           @AL_FECHA_REG datetime=null,
+           @AL_ESTADO char(1)=null,
+           @AL_SUCURSAL int=null,
+           @AL_MAIL varchar(50)=null,
+           @AL_FOTO image=null,
+           @AL_DIRECCION int=null
+)
+as
+INSERT INTO [MSCollegeDB].[dbo].[AL_ALUMOS]
+           ([AL_ID]
+           ,[AL_CARNET]
+           ,[AL_PNOMBRE]
+           ,[AL_SNOMBRE]
+           ,[AL_TNOMBRE]
+           ,[AL_PAPELLIDO]
+           ,[AL_SAPELLIDO]
+           ,[AL_FECHA_NAC]
+           ,[AL_FECHA_REG]
+           ,[AL_ESTADO]
+           ,[AL_SUCURSAL]
+           ,[AL_MAIL]
+           ,[AL_FOTO]
+           ,[AL_DIRECCION])
+     VALUES
+           (@AL_ID,
+            @AL_CARNET,
+            @AL_PNOMBRE,
+            @AL_SNOMBRE,
+            @AL_TNOMBRE,
+            @AL_PAPELLIDO,
+            @AL_SAPELLIDO,
+            @AL_FECHA_NAC,
+            @AL_FECHA_REG,
+            @AL_ESTADO,
+            @AL_SUCURSAL,
+            @AL_MAIL,
+            @AL_FOTO,
+            @AL_DIRECCION)
+GO
+

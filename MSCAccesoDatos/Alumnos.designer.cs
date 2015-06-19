@@ -26,15 +26,13 @@ namespace MSCAccesoDatos
 	public partial class AlumnosDataContext : System.Data.Linq.DataContext
 	{
 		
-		public static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
+		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    public void InsertAL_ALUMO(AL_ALUMO instance);
-    public void UpdateAL_ALUMO(AL_ALUMO instance);
-    public void InsertAL_ENCARGADO(AL_ENCARGADO instance);
-    public void UpdateAL_ENCARGADO(AL_ENCARGADO instance);
-    partial void DeleteAL_ENCARGADO(AL_ENCARGADO instance);
+    partial void InsertAL_ALUMO(AL_ALUMO instance);
+    partial void UpdateAL_ALUMO(AL_ALUMO instance);
+    partial void DeleteAL_ALUMO(AL_ALUMO instance);
     #endregion
 		
 		public AlumnosDataContext() : 
@@ -75,25 +73,16 @@ namespace MSCAccesoDatos
 			}
 		}
 		
-		public System.Data.Linq.Table<AL_DIRECCIONE> AL_DIRECCIONEs
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_Agrega_Alumno")]
+		public int sp_Agrega_Alumno([global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_ID", DbType="Int")] System.Nullable<int> aL_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_CARNET", DbType="NChar(10)")] string aL_CARNET, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_PNOMBRE", DbType="NChar(10)")] string aL_PNOMBRE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_SNOMBRE", DbType="NChar(10)")] string aL_SNOMBRE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_TNOMBRE", DbType="NChar(10)")] string aL_TNOMBRE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_PAPELLIDO", DbType="NChar(10)")] string aL_PAPELLIDO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_SAPELLIDO", DbType="NChar(10)")] string aL_SAPELLIDO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_FECHA_NAC", DbType="Date")] System.Nullable<System.DateTime> aL_FECHA_NAC, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_FECHA_REG", DbType="DateTime")] System.Nullable<System.DateTime> aL_FECHA_REG, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_ESTADO", DbType="Char(1)")] System.Nullable<char> aL_ESTADO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_SUCURSAL", DbType="Int")] System.Nullable<int> aL_SUCURSAL, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_MAIL", DbType="VarChar(50)")] string aL_MAIL, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_FOTO", DbType="Image")] System.Data.Linq.Binary aL_FOTO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="AL_DIRECCION", DbType="Int")] System.Nullable<int> aL_DIRECCION)
 		{
-			get
-			{
-				return this.GetTable<AL_DIRECCIONE>();
-			}
-		}
-		
-		public System.Data.Linq.Table<AL_ENCARGADO> AL_ENCARGADOs
-		{
-			get
-			{
-				return this.GetTable<AL_ENCARGADO>();
-			}
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), aL_ID, aL_CARNET, aL_PNOMBRE, aL_SNOMBRE, aL_TNOMBRE, aL_PAPELLIDO, aL_SAPELLIDO, aL_FECHA_NAC, aL_FECHA_REG, aL_ESTADO, aL_SUCURSAL, aL_MAIL, aL_FOTO, aL_DIRECCION);
+			return ((int)(result.ReturnValue));
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.AL_ALUMOS")]
-	public partial class AL_ALUMO : INotifyPropertyChanging, INotifyPropertyChanged
+	public sealed partial class AL_ALUMO : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -125,8 +114,6 @@ namespace MSCAccesoDatos
 		private System.Data.Linq.Binary _AL_FOTO;
 		
 		private System.Nullable<int> _AL_DIRECCION;
-		
-		private EntitySet<AL_ENCARGADO> _AL_ENCARGADOs;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -164,7 +151,6 @@ namespace MSCAccesoDatos
 		
 		public AL_ALUMO()
 		{
-			this._AL_ENCARGADOs = new EntitySet<AL_ENCARGADO>(new Action<AL_ENCARGADO>(this.attach_AL_ENCARGADOs), new Action<AL_ENCARGADO>(this.detach_AL_ENCARGADOs));
 			OnCreated();
 		}
 		
@@ -448,24 +434,11 @@ namespace MSCAccesoDatos
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="AL_ALUMO_AL_ENCARGADO", Storage="_AL_ENCARGADOs", ThisKey="AL_ID", OtherKey="EN_ALUMNO")]
-		public EntitySet<AL_ENCARGADO> AL_ENCARGADOs
-		{
-			get
-			{
-				return this._AL_ENCARGADOs;
-			}
-			set
-			{
-				this._AL_ENCARGADOs.Assign(value);
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
 		
-		protected virtual void SendPropertyChanging()
+		private void SendPropertyChanging()
 		{
 			if ((this.PropertyChanging != null))
 			{
@@ -473,473 +446,7 @@ namespace MSCAccesoDatos
 			}
 		}
 		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_AL_ENCARGADOs(AL_ENCARGADO entity)
-		{
-			this.SendPropertyChanging();
-			entity.AL_ALUMO = this;
-		}
-		
-		private void detach_AL_ENCARGADOs(AL_ENCARGADO entity)
-		{
-			this.SendPropertyChanging();
-			entity.AL_ALUMO = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.AL_DIRECCIONES")]
-	public partial class AL_DIRECCIONE
-	{
-		
-		private int _DI_ID;
-		
-		private int _DI_ALUMNO;
-		
-		private string _DI_DIRECCION;
-		
-		private int _DI_PAIS;
-		
-		private int _DI_DEPARTAMENTO;
-		
-		private int _DI_MUNICIPIO;
-		
-		private char _DI_ESTADO;
-		
-		public AL_DIRECCIONE()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DI_ID", DbType="Int NOT NULL")]
-		public int DI_ID
-		{
-			get
-			{
-				return this._DI_ID;
-			}
-			set
-			{
-				if ((this._DI_ID != value))
-				{
-					this._DI_ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DI_ALUMNO", DbType="Int NOT NULL")]
-		public int DI_ALUMNO
-		{
-			get
-			{
-				return this._DI_ALUMNO;
-			}
-			set
-			{
-				if ((this._DI_ALUMNO != value))
-				{
-					this._DI_ALUMNO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DI_DIRECCION", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
-		public string DI_DIRECCION
-		{
-			get
-			{
-				return this._DI_DIRECCION;
-			}
-			set
-			{
-				if ((this._DI_DIRECCION != value))
-				{
-					this._DI_DIRECCION = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DI_PAIS", DbType="Int NOT NULL")]
-		public int DI_PAIS
-		{
-			get
-			{
-				return this._DI_PAIS;
-			}
-			set
-			{
-				if ((this._DI_PAIS != value))
-				{
-					this._DI_PAIS = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DI_DEPARTAMENTO", DbType="Int NOT NULL")]
-		public int DI_DEPARTAMENTO
-		{
-			get
-			{
-				return this._DI_DEPARTAMENTO;
-			}
-			set
-			{
-				if ((this._DI_DEPARTAMENTO != value))
-				{
-					this._DI_DEPARTAMENTO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DI_MUNICIPIO", DbType="Int NOT NULL")]
-		public int DI_MUNICIPIO
-		{
-			get
-			{
-				return this._DI_MUNICIPIO;
-			}
-			set
-			{
-				if ((this._DI_MUNICIPIO != value))
-				{
-					this._DI_MUNICIPIO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DI_ESTADO", DbType="Char(1) NOT NULL")]
-		public char DI_ESTADO
-		{
-			get
-			{
-				return this._DI_ESTADO;
-			}
-			set
-			{
-				if ((this._DI_ESTADO != value))
-				{
-					this._DI_ESTADO = value;
-				}
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.AL_ENCARGADO")]
-	public partial class AL_ENCARGADO : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _EN_ID;
-		
-		private int _EN_ALUMNO;
-		
-		private string _EN_NOMBRE;
-		
-		private string _EN_DIRECCION;
-		
-		private string _EN_CELULAR;
-		
-		private string _EN_TELEFONO_CASA;
-		
-		private string _EN_TELEFONO_TRABAJO;
-		
-		private string _EN_PARENTESCO;
-		
-		private System.Nullable<char> _EN_PRICIPAL;
-		
-		private System.Nullable<char> _EN_ESTADO;
-		
-		private EntityRef<AL_ALUMO> _AL_ALUMO;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnEN_IDChanging(int value);
-    partial void OnEN_IDChanged();
-    partial void OnEN_ALUMNOChanging(int value);
-    partial void OnEN_ALUMNOChanged();
-    partial void OnEN_NOMBREChanging(string value);
-    partial void OnEN_NOMBREChanged();
-    partial void OnEN_DIRECCIONChanging(string value);
-    partial void OnEN_DIRECCIONChanged();
-    partial void OnEN_CELULARChanging(string value);
-    partial void OnEN_CELULARChanged();
-    partial void OnEN_TELEFONO_CASAChanging(string value);
-    partial void OnEN_TELEFONO_CASAChanged();
-    partial void OnEN_TELEFONO_TRABAJOChanging(string value);
-    partial void OnEN_TELEFONO_TRABAJOChanged();
-    partial void OnEN_PARENTESCOChanging(string value);
-    partial void OnEN_PARENTESCOChanged();
-    partial void OnEN_PRICIPALChanging(System.Nullable<char> value);
-    partial void OnEN_PRICIPALChanged();
-    partial void OnEN_ESTADOChanging(System.Nullable<char> value);
-    partial void OnEN_ESTADOChanged();
-    #endregion
-		
-		public AL_ENCARGADO()
-		{
-			this._AL_ALUMO = default(EntityRef<AL_ALUMO>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EN_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int EN_ID
-		{
-			get
-			{
-				return this._EN_ID;
-			}
-			set
-			{
-				if ((this._EN_ID != value))
-				{
-					this.OnEN_IDChanging(value);
-					this.SendPropertyChanging();
-					this._EN_ID = value;
-					this.SendPropertyChanged("EN_ID");
-					this.OnEN_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EN_ALUMNO", DbType="Int NOT NULL")]
-		public int EN_ALUMNO
-		{
-			get
-			{
-				return this._EN_ALUMNO;
-			}
-			set
-			{
-				if ((this._EN_ALUMNO != value))
-				{
-					if (this._AL_ALUMO.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnEN_ALUMNOChanging(value);
-					this.SendPropertyChanging();
-					this._EN_ALUMNO = value;
-					this.SendPropertyChanged("EN_ALUMNO");
-					this.OnEN_ALUMNOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EN_NOMBRE", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string EN_NOMBRE
-		{
-			get
-			{
-				return this._EN_NOMBRE;
-			}
-			set
-			{
-				if ((this._EN_NOMBRE != value))
-				{
-					this.OnEN_NOMBREChanging(value);
-					this.SendPropertyChanging();
-					this._EN_NOMBRE = value;
-					this.SendPropertyChanged("EN_NOMBRE");
-					this.OnEN_NOMBREChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EN_DIRECCION", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
-		public string EN_DIRECCION
-		{
-			get
-			{
-				return this._EN_DIRECCION;
-			}
-			set
-			{
-				if ((this._EN_DIRECCION != value))
-				{
-					this.OnEN_DIRECCIONChanging(value);
-					this.SendPropertyChanging();
-					this._EN_DIRECCION = value;
-					this.SendPropertyChanged("EN_DIRECCION");
-					this.OnEN_DIRECCIONChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EN_CELULAR", DbType="VarChar(15)")]
-		public string EN_CELULAR
-		{
-			get
-			{
-				return this._EN_CELULAR;
-			}
-			set
-			{
-				if ((this._EN_CELULAR != value))
-				{
-					this.OnEN_CELULARChanging(value);
-					this.SendPropertyChanging();
-					this._EN_CELULAR = value;
-					this.SendPropertyChanged("EN_CELULAR");
-					this.OnEN_CELULARChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EN_TELEFONO_CASA", DbType="VarChar(15)")]
-		public string EN_TELEFONO_CASA
-		{
-			get
-			{
-				return this._EN_TELEFONO_CASA;
-			}
-			set
-			{
-				if ((this._EN_TELEFONO_CASA != value))
-				{
-					this.OnEN_TELEFONO_CASAChanging(value);
-					this.SendPropertyChanging();
-					this._EN_TELEFONO_CASA = value;
-					this.SendPropertyChanged("EN_TELEFONO_CASA");
-					this.OnEN_TELEFONO_CASAChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EN_TELEFONO_TRABAJO", DbType="VarChar(15)")]
-		public string EN_TELEFONO_TRABAJO
-		{
-			get
-			{
-				return this._EN_TELEFONO_TRABAJO;
-			}
-			set
-			{
-				if ((this._EN_TELEFONO_TRABAJO != value))
-				{
-					this.OnEN_TELEFONO_TRABAJOChanging(value);
-					this.SendPropertyChanging();
-					this._EN_TELEFONO_TRABAJO = value;
-					this.SendPropertyChanged("EN_TELEFONO_TRABAJO");
-					this.OnEN_TELEFONO_TRABAJOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EN_PARENTESCO", DbType="VarChar(50)")]
-		public string EN_PARENTESCO
-		{
-			get
-			{
-				return this._EN_PARENTESCO;
-			}
-			set
-			{
-				if ((this._EN_PARENTESCO != value))
-				{
-					this.OnEN_PARENTESCOChanging(value);
-					this.SendPropertyChanging();
-					this._EN_PARENTESCO = value;
-					this.SendPropertyChanged("EN_PARENTESCO");
-					this.OnEN_PARENTESCOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EN_PRICIPAL", DbType="Char(1)")]
-		public System.Nullable<char> EN_PRICIPAL
-		{
-			get
-			{
-				return this._EN_PRICIPAL;
-			}
-			set
-			{
-				if ((this._EN_PRICIPAL != value))
-				{
-					this.OnEN_PRICIPALChanging(value);
-					this.SendPropertyChanging();
-					this._EN_PRICIPAL = value;
-					this.SendPropertyChanged("EN_PRICIPAL");
-					this.OnEN_PRICIPALChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EN_ESTADO", DbType="Char(1)")]
-		public System.Nullable<char> EN_ESTADO
-		{
-			get
-			{
-				return this._EN_ESTADO;
-			}
-			set
-			{
-				if ((this._EN_ESTADO != value))
-				{
-					this.OnEN_ESTADOChanging(value);
-					this.SendPropertyChanging();
-					this._EN_ESTADO = value;
-					this.SendPropertyChanged("EN_ESTADO");
-					this.OnEN_ESTADOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="AL_ALUMO_AL_ENCARGADO", Storage="_AL_ALUMO", ThisKey="EN_ALUMNO", OtherKey="AL_ID", IsForeignKey=true)]
-		public AL_ALUMO AL_ALUMO
-		{
-			get
-			{
-				return this._AL_ALUMO.Entity;
-			}
-			set
-			{
-				AL_ALUMO previousValue = this._AL_ALUMO.Entity;
-				if (((previousValue != value) 
-							|| (this._AL_ALUMO.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._AL_ALUMO.Entity = null;
-						previousValue.AL_ENCARGADOs.Remove(this);
-					}
-					this._AL_ALUMO.Entity = value;
-					if ((value != null))
-					{
-						value.AL_ENCARGADOs.Add(this);
-						this._EN_ALUMNO = value.AL_ID;
-					}
-					else
-					{
-						this._EN_ALUMNO = default(int);
-					}
-					this.SendPropertyChanged("AL_ALUMO");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
+		private void SendPropertyChanged(String propertyName)
 		{
 			if ((this.PropertyChanged != null))
 			{
