@@ -11,3 +11,12 @@ D:\MSCollege\MSCollege\obj\Debug\MSCollege.exe.licenses
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.exe
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.pdb
 D:\MSCollege\MSCollege\obj\Debug\MSCollege.Catedraticos.Catedraticos.resources
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\bin\Debug\MSCollege.exe
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\bin\Debug\MSCollege.pdb
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Catedraticos.Catedraticos.resources
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Form1.resources
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Properties.Resources.resources
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.sps.resources
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCPresentacion.csproj.GenerateResource.Cache
+C:\Users\FAGARGU\documents\visual studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.exe.licenses
