@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.IO;
 using WebCam_Capture;
-using MSCAccesoDatos;
 
 namespace MSCollege.Alumnos
 {
@@ -57,6 +56,7 @@ namespace MSCollege.Alumnos
             MessageBox.Show("Foto Guardada: /Alumnos/" + carnetxt.Text + "/");
             webcam.Stop();
         }
+<<<<<<< HEAD
 
          
      
@@ -74,5 +74,7 @@ namespace MSCollege.Alumnos
                 //.InsertAL_ALUMO(Agregar);
             }
         }
+=======
+>>>>>>> origin/master
     }
 }
