@@ -39,7 +39,7 @@ namespace MSCollege
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             PanelPrincipal.Controls.Clear();
-            Alumnos.RegistroAlumnos ra = new Alumnos.RegistroAlumnos();
+            Alumnos.RegAlumnos ra = new Alumnos.RegAlumnos();
             ra.TopLevel = false;
             ra.Parent = this.MdiParent;
             ra.Dock = DockStyle.Fill;

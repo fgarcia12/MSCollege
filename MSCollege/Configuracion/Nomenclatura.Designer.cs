@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.asd = new DevExpress.XtraEditors.LabelControl();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,36 @@
             this.flowLayoutPanel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.flowLayoutPanel1_DragDrop);
             this.flowLayoutPanel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.flowLayoutPanel1_DragEnter);
             // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Location = new System.Drawing.Point(3, 3);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(181, 23);
+            this.simpleButton2.TabIndex = 1;
+            this.simpleButton2.Text = "22";
+            this.simpleButton2.ToolTip = "Código Carrera";
+            this.simpleButton2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.simpleButton2_MouseDown);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(3, 32);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(181, 23);
+            this.simpleButton1.TabIndex = 1;
+            this.simpleButton1.Text = "2015";
+            this.simpleButton1.ToolTip = "Año de Inscripción";
+            this.simpleButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.simpleButton1_MouseDown);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(3, 61);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(181, 23);
+            this.simpleButton3.TabIndex = 1;
+            this.simpleButton3.Text = "0001";
+            this.simpleButton3.ToolTip = "Correlativo";
+            this.simpleButton3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.simpleButton3_MouseDown);
+            // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
@@ -69,36 +99,6 @@
             this.labelControl2.Size = new System.Drawing.Size(124, 24);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "22-2015-0001";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(3, 32);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(181, 23);
-            this.simpleButton1.TabIndex = 1;
-            this.simpleButton1.Text = "2015";
-            this.simpleButton1.ToolTip = "Año de Inscripción";
-            this.simpleButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.simpleButton1_MouseDown);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Location = new System.Drawing.Point(3, 3);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(181, 23);
-            this.simpleButton2.TabIndex = 1;
-            this.simpleButton2.Text = "22";
-            this.simpleButton2.ToolTip = "Código Carrera";
-            this.simpleButton2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.simpleButton2_MouseDown);
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Location = new System.Drawing.Point(3, 61);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(181, 23);
-            this.simpleButton3.TabIndex = 1;
-            this.simpleButton3.Text = "0001";
-            this.simpleButton3.ToolTip = "Correlativo";
-            this.simpleButton3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.simpleButton3_MouseDown);
             // 
             // asd
             // 
