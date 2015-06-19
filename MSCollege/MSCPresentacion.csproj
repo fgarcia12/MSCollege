@@ -39,6 +39,9 @@
     <Reference Include="DevExpress.XtraBars.v14.2" />
     <Reference Include="DevExpress.Sparkline.v14.2.Core" />
     <Reference Include="DevExpress.XtraEditors.v14.2" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,13 +52,35 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture, Version=1.0.2395.24959, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WebCam_Capture.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alumnos\RegAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumnos\RegAlumnos.Designer.cs">
+      <DependentUpon>RegAlumnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Catedraticos\Catedraticos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Catedraticos\Catedraticos.Designer.cs">
       <DependentUpon>Catedraticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\Nomenclatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\Nomenclatura.Designer.cs">
+      <DependentUpon>Nomenclatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\AddEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\AddEvento.Designer.cs">
+      <DependentUpon>AddEvento.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -63,6 +88,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Herramientas\WebCam.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sps.cs">
@@ -71,8 +97,17 @@
     <Compile Include="sps.Designer.cs">
       <DependentUpon>sps.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Alumnos\RegAlumnos.resx">
+      <DependentUpon>RegAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Catedraticos\Catedraticos.resx">
       <DependentUpon>Catedraticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\Nomenclatura.resx">
+      <DependentUpon>Nomenclatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos\AddEvento.resx">
+      <DependentUpon>AddEvento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -104,9 +139,7 @@
   <ItemGroup>
     <None Include="Resources\msc.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Alumnos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
