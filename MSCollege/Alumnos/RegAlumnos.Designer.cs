@@ -35,19 +35,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -76,6 +68,14 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.carnetxt = new System.Windows.Forms.TextBox();
             this.cbfecha = new DevExpress.XtraEditors.DateEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,6 +86,14 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -103,24 +111,24 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textEdit8);
+            this.tabPage1.Controls.Add(this.textEdit11);
+            this.tabPage1.Controls.Add(this.textEdit4);
+            this.tabPage1.Controls.Add(this.textEdit2);
+            this.tabPage1.Controls.Add(this.textEdit7);
+            this.tabPage1.Controls.Add(this.textEdit9);
+            this.tabPage1.Controls.Add(this.textEdit3);
+            this.tabPage1.Controls.Add(this.textEdit1);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.labelControl13);
             this.tabPage1.Controls.Add(this.radioGroup1);
-            this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.dateEdit1);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox5);
             this.tabPage1.Controls.Add(this.labelControl11);
-            this.tabPage1.Controls.Add(this.textBox6);
             this.tabPage1.Controls.Add(this.labelControl10);
-            this.tabPage1.Controls.Add(this.textBox7);
-            this.tabPage1.Controls.Add(this.textBox8);
             this.tabPage1.Controls.Add(this.labelControl9);
-            this.tabPage1.Controls.Add(this.textBox9);
             this.tabPage1.Controls.Add(this.labelControl8);
-            this.tabPage1.Controls.Add(this.textBox10);
             this.tabPage1.Controls.Add(this.labelControl7);
             this.tabPage1.Controls.Add(this.labelControl3);
             this.tabPage1.Controls.Add(this.labelControl6);
@@ -181,15 +189,8 @@
             this.radioGroup1.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("masculino", "Masculino"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("femenino", "Femenino")});
-            this.radioGroup1.Size = new System.Drawing.Size(245, 22);
+            this.radioGroup1.Size = new System.Drawing.Size(170, 22);
             this.radioGroup1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(183, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(245, 21);
-            this.textBox2.TabIndex = 0;
             // 
             // dateEdit1
             // 
@@ -205,20 +206,6 @@
             this.dateEdit1.Size = new System.Drawing.Size(245, 20);
             this.dateEdit1.TabIndex = 3;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(183, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(245, 21);
-            this.textBox3.TabIndex = 0;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(183, 143);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(245, 21);
-            this.textBox5.TabIndex = 0;
-            // 
             // labelControl11
             // 
             this.labelControl11.Location = new System.Drawing.Point(61, 281);
@@ -226,13 +213,6 @@
             this.labelControl11.Size = new System.Drawing.Size(75, 13);
             this.labelControl11.TabIndex = 1;
             this.labelControl11.Text = "Tipo de sangre:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(183, 170);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(245, 21);
-            this.textBox6.TabIndex = 0;
             // 
             // labelControl10
             // 
@@ -242,20 +222,6 @@
             this.labelControl10.TabIndex = 1;
             this.labelControl10.Text = "Nombre de la madre:";
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(183, 197);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(245, 21);
-            this.textBox7.TabIndex = 0;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(183, 224);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(245, 21);
-            this.textBox8.TabIndex = 0;
-            // 
             // labelControl9
             // 
             this.labelControl9.Location = new System.Drawing.Point(61, 227);
@@ -264,13 +230,6 @@
             this.labelControl9.TabIndex = 1;
             this.labelControl9.Text = "Nombre del padre:";
             // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(183, 251);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(245, 21);
-            this.textBox9.TabIndex = 0;
-            // 
             // labelControl8
             // 
             this.labelControl8.Location = new System.Drawing.Point(61, 200);
@@ -278,13 +237,6 @@
             this.labelControl8.Size = new System.Drawing.Size(113, 13);
             this.labelControl8.TabIndex = 1;
             this.labelControl8.Text = "Último grado aprovado:";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(183, 278);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(245, 21);
-            this.textBox10.TabIndex = 0;
             // 
             // labelControl7
             // 
@@ -528,6 +480,62 @@
             this.cbfecha.Size = new System.Drawing.Size(210, 20);
             this.cbfecha.TabIndex = 10;
             // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(183, 62);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(245, 20);
+            this.textEdit1.TabIndex = 7;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(183, 89);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(245, 20);
+            this.textEdit2.TabIndex = 7;
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Location = new System.Drawing.Point(183, 144);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Size = new System.Drawing.Size(245, 20);
+            this.textEdit3.TabIndex = 7;
+            // 
+            // textEdit4
+            // 
+            this.textEdit4.Location = new System.Drawing.Point(183, 170);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Size = new System.Drawing.Size(245, 20);
+            this.textEdit4.TabIndex = 7;
+            // 
+            // textEdit7
+            // 
+            this.textEdit7.Location = new System.Drawing.Point(183, 251);
+            this.textEdit7.Name = "textEdit7";
+            this.textEdit7.Size = new System.Drawing.Size(245, 20);
+            this.textEdit7.TabIndex = 7;
+            // 
+            // textEdit8
+            // 
+            this.textEdit8.Location = new System.Drawing.Point(183, 276);
+            this.textEdit8.Name = "textEdit8";
+            this.textEdit8.Size = new System.Drawing.Size(245, 20);
+            this.textEdit8.TabIndex = 7;
+            // 
+            // textEdit9
+            // 
+            this.textEdit9.Location = new System.Drawing.Point(183, 197);
+            this.textEdit9.Name = "textEdit9";
+            this.textEdit9.Size = new System.Drawing.Size(245, 20);
+            this.textEdit9.TabIndex = 7;
+            // 
+            // textEdit11
+            // 
+            this.textEdit11.Location = new System.Drawing.Point(183, 223);
+            this.textEdit11.Name = "textEdit11";
+            this.textEdit11.Size = new System.Drawing.Size(245, 20);
+            this.textEdit11.TabIndex = 7;
+            // 
             // RegAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -555,6 +563,14 @@
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,19 +585,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.RadioGroup radioGroup1;
-        private System.Windows.Forms.TextBox textBox2;
         private DevExpress.XtraEditors.DateEdit dateEdit1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private System.Windows.Forms.TextBox textBox6;
         private DevExpress.XtraEditors.LabelControl labelControl10;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private System.Windows.Forms.TextBox textBox9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private System.Windows.Forms.TextBox textBox10;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl6;
@@ -610,6 +618,14 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.TextBox carnetxt;
         private DevExpress.XtraEditors.DateEdit cbfecha;
+        private DevExpress.XtraEditors.TextEdit textEdit8;
+        private DevExpress.XtraEditors.TextEdit textEdit11;
+        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private DevExpress.XtraEditors.TextEdit textEdit9;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
 
     }
 }
