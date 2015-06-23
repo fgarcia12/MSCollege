@@ -105,7 +105,7 @@
       </xsd:complexType>
     </xsd:element>
   </xsd:schema>
-  <resheader name="resmimetype">
+  <res er name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
   <resheader name="version">

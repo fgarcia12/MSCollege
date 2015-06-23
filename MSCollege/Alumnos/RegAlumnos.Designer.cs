@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -41,12 +41,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
-<<<<<<< HEAD
+
             this.txtFechaNac = new DevExpress.XtraEditors.DateEdit();
             this.txtNacionalidad = new System.Windows.Forms.TextBox();
-=======
+
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
->>>>>>> origin/master
+
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
@@ -79,10 +79,10 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.carnetxt = new System.Windows.Forms.TextBox();
             this.cbfecha = new DevExpress.XtraEditors.DateEdit();
-<<<<<<< HEAD
+
             this.Valida = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             this.button3 = new System.Windows.Forms.Button();
-=======
+
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
@@ -91,7 +91,7 @@
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
->>>>>>> origin/master
+
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPApellido.Properties)).BeginInit();
@@ -104,9 +104,9 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties)).BeginInit();
-<<<<<<< HEAD
+
             ((System.ComponentModel.ISupportInitialize)(this.Valida)).BeginInit();
-=======
+
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
@@ -115,7 +115,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
->>>>>>> origin/master
+
             this.SuspendLayout();
             // 
             // tabControl1
@@ -133,11 +133,11 @@
             // 
             // tabPage1
             // 
-<<<<<<< HEAD
+
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.txtPApellido);
             this.tabPage1.Controls.Add(this.txtPNombre);
-=======
+
             this.tabPage1.Controls.Add(this.textEdit8);
             this.tabPage1.Controls.Add(this.textEdit11);
             this.tabPage1.Controls.Add(this.textEdit4);
@@ -146,18 +146,18 @@
             this.tabPage1.Controls.Add(this.textEdit9);
             this.tabPage1.Controls.Add(this.textEdit3);
             this.tabPage1.Controls.Add(this.textEdit1);
->>>>>>> origin/master
+
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.labelControl13);
             this.tabPage1.Controls.Add(this.radioGroup1);
-<<<<<<< HEAD
+
             this.tabPage1.Controls.Add(this.txtFechaNac);
             this.tabPage1.Controls.Add(this.txtNacionalidad);
-=======
+
             this.tabPage1.Controls.Add(this.dateEdit1);
->>>>>>> origin/master
+
             this.tabPage1.Controls.Add(this.labelControl11);
             this.tabPage1.Controls.Add(this.labelControl10);
             this.tabPage1.Controls.Add(this.labelControl9);
@@ -245,25 +245,25 @@
             this.radioGroup1.Size = new System.Drawing.Size(170, 22);
             this.radioGroup1.TabIndex = 4;
             // 
-<<<<<<< HEAD
+
             // txtFechaNac
             // 
             this.txtFechaNac.EditValue = null;
             this.txtFechaNac.Location = new System.Drawing.Point(183, 116);
             this.txtFechaNac.Name = "txtFechaNac";
-            this.txtFechaNac.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-=======
+            //this.txtFechaNac.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+
             // dateEdit1
             // 
             this.dateEdit1.EditValue = null;
             this.dateEdit1.Location = new System.Drawing.Point(183, 116);
             this.dateEdit1.Name = "dateEdit1";
             this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
->>>>>>> origin/master
+
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-<<<<<<< HEAD
+
             this.txtFechaNac.Properties.Mask.EditMask = "";
             this.txtFechaNac.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.txtFechaNac.Size = new System.Drawing.Size(245, 20);
@@ -278,12 +278,12 @@
             this.txtNacionalidad.Name = "txtNacionalidad";
             this.txtNacionalidad.Size = new System.Drawing.Size(245, 21);
             this.txtNacionalidad.TabIndex = 0;
-=======
+
             this.dateEdit1.Properties.Mask.EditMask = "";
             this.dateEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
             this.dateEdit1.Size = new System.Drawing.Size(245, 20);
             this.dateEdit1.TabIndex = 3;
->>>>>>> origin/master
+
             // 
             // labelControl11
             // 
@@ -610,7 +610,7 @@
             // 
             // textEdit11
             // 
-<<<<<<< HEAD
+
             this.button3.Location = new System.Drawing.Point(61, 300);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(59, 23);
@@ -618,12 +618,12 @@
             this.button3.Text = "Guardar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
-=======
+
             this.textEdit11.Location = new System.Drawing.Point(183, 223);
             this.textEdit11.Name = "textEdit11";
             this.textEdit11.Size = new System.Drawing.Size(245, 20);
             this.textEdit11.TabIndex = 7;
->>>>>>> origin/master
+
             // 
             // RegAlumnos
             // 
@@ -654,9 +654,9 @@
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbfecha.Properties)).EndInit();
-<<<<<<< HEAD
+
             ((System.ComponentModel.ISupportInitialize)(this.Valida)).EndInit();
-=======
+
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
@@ -665,13 +665,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
->>>>>>> origin/master
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-        #endregion
+
+        
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -680,12 +681,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.RadioGroup radioGroup1;
-<<<<<<< HEAD
+
         private DevExpress.XtraEditors.DateEdit txtFechaNac;
         private System.Windows.Forms.TextBox txtNacionalidad;
-=======
+
         private DevExpress.XtraEditors.DateEdit dateEdit1;
->>>>>>> origin/master
+
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl9;
@@ -718,12 +719,12 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.TextBox carnetxt;
         private DevExpress.XtraEditors.DateEdit cbfecha;
-<<<<<<< HEAD
+
         private DevExpress.XtraEditors.TextEdit txtPApellido;
         private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider Valida;
         private DevExpress.XtraEditors.TextEdit txtPNombre;
         private System.Windows.Forms.Button button3;
-=======
+
         private DevExpress.XtraEditors.TextEdit textEdit8;
         private DevExpress.XtraEditors.TextEdit textEdit11;
         private DevExpress.XtraEditors.TextEdit textEdit4;
@@ -732,7 +733,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit9;
         private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.TextEdit textEdit1;
->>>>>>> origin/master
+
 
     }
 }
