@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MSCollege</RootNamespace>
     <AssemblyName>MSCollege</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -58,12 +59,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alumnos\RegAlumnos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Alumnos\RegAlumnos.Designer.cs">
-      <DependentUpon>RegAlumnos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Catedraticos\Catedraticos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,10 +92,6 @@
     <Compile Include="sps.Designer.cs">
       <DependentUpon>sps.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Alumnos\RegAlumnos.resx">
-      <DependentUpon>RegAlumnos.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Catedraticos\Catedraticos.resx">
       <DependentUpon>Catedraticos.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +118,7 @@
     <EmbeddedResource Include="sps.resx">
       <DependentUpon>sps.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -145,6 +137,9 @@
       <Project>{e18210ad-776a-4c05-ae29-a54cb827400d}</Project>
       <Name>MSCAccesoDatos</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Alumnos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

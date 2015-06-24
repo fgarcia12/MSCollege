@@ -29,3 +29,4 @@ D:\MSCollege\MSCollege\obj\Debug\MSCollege.Alumnos.RegAlumnos.resources
 C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Alumnos.RegAlumnos.resources
 C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Configuracion.Nomenclatura.resources
 C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCollege\obj\Debug\MSCollege.Eventos.AddEvento.resources
+C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCollege\bin\Debug\MSCollege.exe.config
