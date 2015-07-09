@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MSCollegeDB" Class="AlumnosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=186.151.198.5;Initial Catalog=MSCollegeDB;Persist Security Info=True;User ID=sa" SettingsObjectName="MSCAccesoDatos.Properties.Settings" SettingsPropertyName="MSCollegeDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AL_ALUMOS" Member="AL_ALUMOs">
+    <Type Name="AL_ALUMO">
+      <Column Name="AL_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AL_CARNET" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="AL_PNOMBRE" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="AL_SNOMBRE" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="AL_TNOMBRE" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="AL_PAPELLIDO" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="AL_SAPELLIDO" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="AL_FECHA_NAC" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AL_FECHA_REG" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AL_ESTADO" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="AL_SUCURSAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AL_MAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AL_FOTO" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="AL_DIRECCION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CF_MAESTROS" Member="CF_MAESTROs">
+    <Type Name="CF_MAESTRO">
+      <Column Name="MA_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MA_PNOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MA_SNOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MA_PAPELLIDO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MA_SAPELLIDO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MA_APCASADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MA_DIRECCION" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="MA_TELEFONO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MA_MAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MA_ESTADO" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

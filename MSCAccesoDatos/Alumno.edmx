@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MSCollegeDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="MSCollegeDBModelStoreContainer">
+          <EntitySet Name="AL_ALUMOS" EntityType="MSCollegeDBModel.Store.AL_ALUMOS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CF_MAESTROS" EntityType="MSCollegeDBModel.Store.CF_MAESTROS" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="AL_ALUMOS">
+          <Key>
+            <PropertyRef Name="AL_ID" />
+          </Key>
+          <Property Name="AL_ID" Type="int" Nullable="false" />
+          <Property Name="AL_CARNET" Type="nchar" MaxLength="10" />
+          <Property Name="AL_PNOMBRE" Type="nchar" MaxLength="10" />
+          <Property Name="AL_SNOMBRE" Type="nchar" MaxLength="10" />
+          <Property Name="AL_TNOMBRE" Type="nchar" MaxLength="10" />
+          <Property Name="AL_PAPELLIDO" Type="nchar" MaxLength="10" />
+          <Property Name="AL_SAPELLIDO" Type="nchar" MaxLength="10" />
+          <Property Name="AL_FECHA_NAC" Type="date" />
+          <Property Name="AL_FECHA_REG" Type="datetime" />
+          <Property Name="AL_ESTADO" Type="char" MaxLength="1" />
+          <Property Name="AL_SUCURSAL" Type="int" />
+          <Property Name="AL_MAIL" Type="varchar" MaxLength="50" />
+          <Property Name="AL_FOTO" Type="image" />
+          <Property Name="AL_DIRECCION" Type="int" />
+        </EntityType>
+        <EntityType Name="CF_MAESTROS">
+          <Key>
+            <PropertyRef Name="MA_ID" />
+          </Key>
+          <Property Name="MA_ID" Type="int" Nullable="false" />
+          <Property Name="MA_PNOMBRE" Type="varchar" MaxLength="50" />
+          <Property Name="MA_SNOMBRE" Type="varchar" MaxLength="50" />
+          <Property Name="MA_PAPELLIDO" Type="varchar" MaxLength="50" />
+          <Property Name="MA_SAPELLIDO" Type="varchar" MaxLength="50" />
+          <Property Name="MA_APCASADO" Type="varchar" MaxLength="50" />
+          <Property Name="MA_DIRECCION" Type="varchar" MaxLength="255" />
+          <Property Name="MA_TELEFONO" Type="varchar" MaxLength="20" />
+          <Property Name="MA_MAIL" Type="varchar" MaxLength="50" />
+          <Property Name="MA_ESTADO" Type="char" MaxLength="1" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MSCollegeDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="MSCollegeDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AL_ALUMOS" EntityType="MSCollegeDBModel.AL_ALUMOS" />
+          <EntitySet Name="CF_MAESTROS" EntityType="MSCollegeDBModel.CF_MAESTROS" />
+        </EntityContainer>
+        <EntityType Name="AL_ALUMOS">
+          <Key>
+            <PropertyRef Name="AL_ID" />
+          </Key>
+          <Property Name="AL_ID" Type="Int32" Nullable="false" />
+          <Property Name="AL_CARNET" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="AL_PNOMBRE" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="AL_SNOMBRE" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="AL_TNOMBRE" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="AL_PAPELLIDO" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="AL_SAPELLIDO" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="AL_FECHA_NAC" Type="DateTime" Precision="0" />
+          <Property Name="AL_FECHA_REG" Type="DateTime" Precision="3" />
+          <Property Name="AL_ESTADO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="AL_SUCURSAL" Type="Int32" />
+          <Property Name="AL_MAIL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="AL_FOTO" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="AL_DIRECCION" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CF_MAESTROS">
+          <Key>
+            <PropertyRef Name="MA_ID" />
+          </Key>
+          <Property Name="MA_ID" Type="Int32" Nullable="false" />
+          <Property Name="MA_PNOMBRE" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MA_SNOMBRE" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MA_PAPELLIDO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MA_SAPELLIDO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MA_APCASADO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MA_DIRECCION" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="MA_TELEFONO" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="MA_MAIL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MA_ESTADO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MSCollegeDBModelStoreContainer" CdmEntityContainer="MSCollegeDBEntities">
+          <EntitySetMapping Name="AL_ALUMOS">
+            <EntityTypeMapping TypeName="MSCollegeDBModel.AL_ALUMOS">
+              <MappingFragment StoreEntitySet="AL_ALUMOS">
+                <ScalarProperty Name="AL_ID" ColumnName="AL_ID" />
+                <ScalarProperty Name="AL_CARNET" ColumnName="AL_CARNET" />
+                <ScalarProperty Name="AL_PNOMBRE" ColumnName="AL_PNOMBRE" />
+                <ScalarProperty Name="AL_SNOMBRE" ColumnName="AL_SNOMBRE" />
+                <ScalarProperty Name="AL_TNOMBRE" ColumnName="AL_TNOMBRE" />
+                <ScalarProperty Name="AL_PAPELLIDO" ColumnName="AL_PAPELLIDO" />
+                <ScalarProperty Name="AL_SAPELLIDO" ColumnName="AL_SAPELLIDO" />
+                <ScalarProperty Name="AL_FECHA_NAC" ColumnName="AL_FECHA_NAC" />
+                <ScalarProperty Name="AL_FECHA_REG" ColumnName="AL_FECHA_REG" />
+                <ScalarProperty Name="AL_ESTADO" ColumnName="AL_ESTADO" />
+                <ScalarProperty Name="AL_SUCURSAL" ColumnName="AL_SUCURSAL" />
+                <ScalarProperty Name="AL_MAIL" ColumnName="AL_MAIL" />
+                <ScalarProperty Name="AL_FOTO" ColumnName="AL_FOTO" />
+                <ScalarProperty Name="AL_DIRECCION" ColumnName="AL_DIRECCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CF_MAESTROS">
+            <EntityTypeMapping TypeName="MSCollegeDBModel.CF_MAESTROS">
+              <MappingFragment StoreEntitySet="CF_MAESTROS">
+                <ScalarProperty Name="MA_ID" ColumnName="MA_ID" />
+                <ScalarProperty Name="MA_PNOMBRE" ColumnName="MA_PNOMBRE" />
+                <ScalarProperty Name="MA_SNOMBRE" ColumnName="MA_SNOMBRE" />
+                <ScalarProperty Name="MA_PAPELLIDO" ColumnName="MA_PAPELLIDO" />
+                <ScalarProperty Name="MA_SAPELLIDO" ColumnName="MA_SAPELLIDO" />
+                <ScalarProperty Name="MA_APCASADO" ColumnName="MA_APCASADO" />
+                <ScalarProperty Name="MA_DIRECCION" ColumnName="MA_DIRECCION" />
+                <ScalarProperty Name="MA_TELEFONO" ColumnName="MA_TELEFONO" />
+                <ScalarProperty Name="MA_MAIL" ColumnName="MA_MAIL" />
+                <ScalarProperty Name="MA_ESTADO" ColumnName="MA_ESTADO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

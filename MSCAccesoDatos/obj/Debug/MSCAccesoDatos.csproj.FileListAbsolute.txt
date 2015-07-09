@@ -3,3 +3,4 @@ C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCAccesoDatos\
 C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCAccesoDatos\bin\Debug\MSCAccesoDatos.pdb
 C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCAccesoDatos\obj\Debug\MSCAccesoDatos.dll
 C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCAccesoDatos\obj\Debug\MSCAccesoDatos.pdb
+C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCAccesoDatos\obj\Debug\MSCAccesoDatos.csprojResolveAssemblyReference.cache
