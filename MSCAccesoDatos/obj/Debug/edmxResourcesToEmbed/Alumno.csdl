@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MSCollegeDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="MSCollegeDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AL_ALUMOS" EntityType="MSCollegeDBModel.AL_ALUMOS" />
+    <EntitySet Name="CF_MAESTROS" EntityType="MSCollegeDBModel.CF_MAESTROS" />
+  </EntityContainer>
+  <EntityType Name="AL_ALUMOS">
+    <Key>
+      <PropertyRef Name="AL_ID" />
+    </Key>
+    <Property Name="AL_ID" Type="Int32" Nullable="false" />
+    <Property Name="AL_CARNET" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="AL_PNOMBRE" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="AL_SNOMBRE" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="AL_TNOMBRE" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="AL_PAPELLIDO" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="AL_SAPELLIDO" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="AL_FECHA_NAC" Type="DateTime" Precision="0" />
+    <Property Name="AL_FECHA_REG" Type="DateTime" Precision="3" />
+    <Property Name="AL_ESTADO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="AL_SUCURSAL" Type="Int32" />
+    <Property Name="AL_MAIL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AL_FOTO" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="AL_DIRECCION" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CF_MAESTROS">
+    <Key>
+      <PropertyRef Name="MA_ID" />
+    </Key>
+    <Property Name="MA_ID" Type="Int32" Nullable="false" />
+    <Property Name="MA_PNOMBRE" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MA_SNOMBRE" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MA_PAPELLIDO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MA_SAPELLIDO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MA_APCASADO" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MA_DIRECCION" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="MA_TELEFONO" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="MA_MAIL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MA_ESTADO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+  </EntityType>
+</Schema>

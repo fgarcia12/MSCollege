@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MSCollegeDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MSCollegeDBModelStoreContainer">
+    <EntitySet Name="AL_ALUMOS" EntityType="MSCollegeDBModel.Store.AL_ALUMOS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CF_MAESTROS" EntityType="MSCollegeDBModel.Store.CF_MAESTROS" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="AL_ALUMOS">
+    <Key>
+      <PropertyRef Name="AL_ID" />
+    </Key>
+    <Property Name="AL_ID" Type="int" Nullable="false" />
+    <Property Name="AL_CARNET" Type="nchar" MaxLength="10" />
+    <Property Name="AL_PNOMBRE" Type="nchar" MaxLength="10" />
+    <Property Name="AL_SNOMBRE" Type="nchar" MaxLength="10" />
+    <Property Name="AL_TNOMBRE" Type="nchar" MaxLength="10" />
+    <Property Name="AL_PAPELLIDO" Type="nchar" MaxLength="10" />
+    <Property Name="AL_SAPELLIDO" Type="nchar" MaxLength="10" />
+    <Property Name="AL_FECHA_NAC" Type="date" />
+    <Property Name="AL_FECHA_REG" Type="datetime" />
+    <Property Name="AL_ESTADO" Type="char" MaxLength="1" />
+    <Property Name="AL_SUCURSAL" Type="int" />
+    <Property Name="AL_MAIL" Type="varchar" MaxLength="50" />
+    <Property Name="AL_FOTO" Type="image" />
+    <Property Name="AL_DIRECCION" Type="int" />
+  </EntityType>
+  <EntityType Name="CF_MAESTROS">
+    <Key>
+      <PropertyRef Name="MA_ID" />
+    </Key>
+    <Property Name="MA_ID" Type="int" Nullable="false" />
+    <Property Name="MA_PNOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="MA_SNOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="MA_PAPELLIDO" Type="varchar" MaxLength="50" />
+    <Property Name="MA_SAPELLIDO" Type="varchar" MaxLength="50" />
+    <Property Name="MA_APCASADO" Type="varchar" MaxLength="50" />
+    <Property Name="MA_DIRECCION" Type="varchar" MaxLength="255" />
+    <Property Name="MA_TELEFONO" Type="varchar" MaxLength="20" />
+    <Property Name="MA_MAIL" Type="varchar" MaxLength="50" />
+    <Property Name="MA_ESTADO" Type="char" MaxLength="1" />
+  </EntityType>
+</Schema>

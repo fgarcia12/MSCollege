@@ -1,0 +1,5 @@
+C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCComun\bin\Debug\MSCComun.dll
+C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCComun\bin\Debug\MSCComun.pdb
+C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCComun\obj\Debug\MSCComun.csprojResolveAssemblyReference.cache
+C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCComun\obj\Debug\MSCComun.dll
+C:\Users\FAGARGU\Documents\Visual Studio 2012\Projects\MSCollege\MSCComun\obj\Debug\MSCComun.pdb

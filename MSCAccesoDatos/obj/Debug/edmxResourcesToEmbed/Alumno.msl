@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MSCollegeDBModelStoreContainer" CdmEntityContainer="MSCollegeDBEntities">
+    <EntitySetMapping Name="AL_ALUMOS">
+      <EntityTypeMapping TypeName="MSCollegeDBModel.AL_ALUMOS">
+        <MappingFragment StoreEntitySet="AL_ALUMOS">
+          <ScalarProperty Name="AL_ID" ColumnName="AL_ID" />
+          <ScalarProperty Name="AL_CARNET" ColumnName="AL_CARNET" />
+          <ScalarProperty Name="AL_PNOMBRE" ColumnName="AL_PNOMBRE" />
+          <ScalarProperty Name="AL_SNOMBRE" ColumnName="AL_SNOMBRE" />
+          <ScalarProperty Name="AL_TNOMBRE" ColumnName="AL_TNOMBRE" />
+          <ScalarProperty Name="AL_PAPELLIDO" ColumnName="AL_PAPELLIDO" />
+          <ScalarProperty Name="AL_SAPELLIDO" ColumnName="AL_SAPELLIDO" />
+          <ScalarProperty Name="AL_FECHA_NAC" ColumnName="AL_FECHA_NAC" />
+          <ScalarProperty Name="AL_FECHA_REG" ColumnName="AL_FECHA_REG" />
+          <ScalarProperty Name="AL_ESTADO" ColumnName="AL_ESTADO" />
+          <ScalarProperty Name="AL_SUCURSAL" ColumnName="AL_SUCURSAL" />
+          <ScalarProperty Name="AL_MAIL" ColumnName="AL_MAIL" />
+          <ScalarProperty Name="AL_FOTO" ColumnName="AL_FOTO" />
+          <ScalarProperty Name="AL_DIRECCION" ColumnName="AL_DIRECCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CF_MAESTROS">
+      <EntityTypeMapping TypeName="MSCollegeDBModel.CF_MAESTROS">
+        <MappingFragment StoreEntitySet="CF_MAESTROS">
+          <ScalarProperty Name="MA_ID" ColumnName="MA_ID" />
+          <ScalarProperty Name="MA_PNOMBRE" ColumnName="MA_PNOMBRE" />
+          <ScalarProperty Name="MA_SNOMBRE" ColumnName="MA_SNOMBRE" />
+          <ScalarProperty Name="MA_PAPELLIDO" ColumnName="MA_PAPELLIDO" />
+          <ScalarProperty Name="MA_SAPELLIDO" ColumnName="MA_SAPELLIDO" />
+          <ScalarProperty Name="MA_APCASADO" ColumnName="MA_APCASADO" />
+          <ScalarProperty Name="MA_DIRECCION" ColumnName="MA_DIRECCION" />
+          <ScalarProperty Name="MA_TELEFONO" ColumnName="MA_TELEFONO" />
+          <ScalarProperty Name="MA_MAIL" ColumnName="MA_MAIL" />
+          <ScalarProperty Name="MA_ESTADO" ColumnName="MA_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
